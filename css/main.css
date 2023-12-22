@@ -1,35 +1,7 @@
-input[type='number'] {
-    padding: 5px;
-    width: 50px;
-    
-  }
-  
-  
-  form label {
-    padding-left: 20px;
-    color: white;
-  }
-  
-  .result-style {
-    display: flex;
-    text-align: left;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 20px;
-    box-shadow: 0 5px 30px rgb(0 0 0 / 0.7);
-  font-style: italic;
-    box-sizing: border-box;
-    color: white;
-  }
-  
-  img {
-    max-height: 200px;
-    padding-right: 20px;
-    border-radius: 20px;
-  }
-
   body{
       background-image: url(https://w.forfun.com/fetch/03/03fdb791c0c8753db54348da091ba79b.jpeg);
       color: greenyellow;
+      font-style: italic;
   }
+
+   

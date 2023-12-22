@@ -6,79 +6,52 @@
     <title>Final</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
      
 </head>
 <body>
     <figure><img src="https://hbomax-images.warnermediacdn.com/2022-08/tt.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com" alt="Rick and Morty" width="400" height="100"></figure>
   
-    <div class="container">
-        <header>
-       
-          <ul>
-            <li>
-              <a href="#">Personagens</a>
-            </li>
-            <li>
-              <a href="#">Localizações</a>
-            </li>
-            <li>
-              <a href="#">Episódios</a>
-            </li>
-          </ul>
-        </header>
+    <body>
+      <form action="" method="get">
+        <h2>Busca de personagem:</h2>
+        <label for="characterId">ID da personagem</label>
+        <input type="number" name="characterId" id="characterId">
     
-        <main>
-          <section class="chars">
-            <img src="./assets/logo.svg" alt="">
-            
-            <div class="filters">
-              <input type="text" id="name" placeholder="Filter by name..." class="filter">
-              <select name="species" id="species" class="filter">
-                <option value="" default>
-                  Species
-                </option>
-                <option value="animal">Animal</option>
-                <option value="alien">Alien</option>
-                <option value="disease">Doença</option>
-                <option value="unknown">Desconhecido</option>
-                <option value="human">Humano</option>
-                <option value="humanoid">Humanoide</option>
-                <option value="mythological">Mitologico</option>
-                <option value="poopybutthole">Poopybutthole</option>
-                <option value="robot">Robo</option>
-              </select>
-              <select name="gender" id="gender" class="filter">
-                <option value="">
-                  Genero
-                </option>
-                <option value="female">Feminino</option>
-                <option value="male">Masculino</option>
-                <option value="genderless">Sem Genero</option>
-                <option value="unknown">Desconhecido</option>
-              </select>
-              <select name="status" id="status" class="filter">
-                <option value="">
-                  Status
-                </option>
-                <option value="alive">Vivo</option>
-                <option value="dead">Morto</option>
-                <option value="unknown">Desconhecido</option>
-              </select>
-            </div>
+        <hr>
     
-         
-            <button id="load-more">
-              Carregar mais
-            </button>
-          </section>
-        </main>
+        <h2>Informações:</h2>
+        <label for="name">Nome</label>
+        <input type="checkbox" name="name" id="name">
+    
+        <label for="status">Status</label>
+        <input type="checkbox" name="status" id="status">
+    
+        <label for="species">Espécie</label>
+        <input type="checkbox" name="species" id="species">
+    
+        <label for="gender">Gênero</label>
+        <input type="checkbox" name="gender" id="gender">
+    
+        <label for="origin">Planeta de origem</label>
+        <input type="checkbox" name="origin" id="origin">
+    
+      
+    
+        <hr>
+    
+        <button type="submit" id="btn-go" class="btn btn-light">Pesquisar</button>
+        <button type="reset" id="btn-reset" class="btn btn-light">Limpar</button>
+        
+      </form>
+    
+      <div id="result-style">
+        <img src="" alt="" id="img">
+        <div id="content"></div>
       </div>
-
-
-
-
-
-
+      
+    </body>
 
 
 

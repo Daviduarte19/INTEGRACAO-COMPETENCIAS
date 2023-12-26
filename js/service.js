@@ -1,18 +1,20 @@
-import { handleErrors } from "./exception.js";
-var URL = 'https://rickandmortyapi.com/api/character';
+const apiUrl = 'https://rickandmortyapi.com/api/';
 
-export const getAllCharacter = async () => {
-    try {
-        // Fazendo uma solicitação GET para obter produtos da AP
-        const response = await fetch(URL);
-        
-        //lidando com os erros na resposta
-        handleErrors(response);
+async function obterInformacoesPersonagem(id) {
+  try {
+    const url = `${apiUrl}character/${id}`;
+    const response = await fetch(url);
 
-        //converter os dados para json
-        return await response.json();
-    } catch (error) {
-        console.log('Error >>>', error);
+    if (!response.ok) {
+      throw new Error(`Erro de rede - Código ${response.status}`);
     }
-};
 
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Erro ao obter informações do personagem:', error.message);
+    throw error;
+  }
+}
+
+export { obterInformacoesPersonagem };

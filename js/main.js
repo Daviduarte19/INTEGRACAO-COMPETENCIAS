@@ -3,7 +3,8 @@ import { obterInformacoesPersonagem } from './service.js';
 
 function exibirInformacoesPersonagem(character) {
   const characterInfoElement = document.getElementById('character-info');
-
+  
+//as informaçoes que aparecem na tela
   const html = `
     <h2>${character.name}</h2>
     <img src="${character.image}" alt="${character.name}">
@@ -17,7 +18,7 @@ function exibirInformacoesPersonagem(character) {
 }
 
 // Exemplo: Obter informações do personagem com ID 
-obterInformacoesPersonagem(10)
+obterInformacoesPersonagem(1)
   .then(data => {
     exibirInformacoesPersonagem(data);
   })

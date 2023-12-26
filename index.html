@@ -13,11 +13,13 @@
 <body>
     <figure><img src="https://hbomax-images.warnermediacdn.com/2022-08/tt.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com" alt="Rick and Morty" width="400" height="100"></figure>
   
-
+    <form action="" method="get">
     <h1>Detalhes do Personagem</h1>
     <div id="character-info"></div>
-
-
+    <label for="characterId">ID da personagem</label>
+    <input type="number" name="characterId" id="characterId">
+    <button type="submit" id="btn-go">Pesquisar</button>
+    <button type="reset" id="btn-reset">Limpar</button>
 
     <script type="module" src='./js/main.js'></script>
 </body>

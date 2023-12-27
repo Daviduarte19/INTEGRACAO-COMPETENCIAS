@@ -18,7 +18,7 @@ function exibirInformacoesPersonagem(character) {
 }
 
 // Exemplo: Obter informações do personagem com ID 
-obterInformacoesPersonagem(9)
+obterInformacoesPersonagem(1)
   .then(data => {
     exibirInformacoesPersonagem(data);
   })

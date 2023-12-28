@@ -6,7 +6,7 @@ function exibirInformacoesPersonagem(character) {
 
 //as informaçoes que aparecem na tela
   const html = ` 
-    <h2>${character.name}</h2>
+    <h2> <p> Nome: ${character.name}</h2>
     <img src="${character.image}" alt="${character.name}">
     <p>Status: ${character.status}</p>
     <p>Espécie: ${character.species}</p>
@@ -20,7 +20,7 @@ function exibirInformacoesPersonagem(character) {
 
 
 // Exemplo: Obter informações do personagem com ID 
-obterInformacoesPersonagem(60)
+obterInformacoesPersonagem(5)
   .then(data => {
     exibirInformacoesPersonagem(data);
   })

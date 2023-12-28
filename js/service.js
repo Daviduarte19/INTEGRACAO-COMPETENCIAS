@@ -1,4 +1,4 @@
-// consumindo a API
+
 const apiUrl = 'https://rickandmortyapi.com/api/';
 
 async function obterInformacoesPersonagem(id) {

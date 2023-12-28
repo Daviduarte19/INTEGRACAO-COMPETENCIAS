@@ -5,7 +5,7 @@ function exibirInformacoesPersonagem(character) {
   const characterInfoElement = document.getElementById('character-info');
 
 //as informaçoes que aparecem na tela
-  const html = `
+  const html = ` 
     <h2>${character.name}</h2>
     <img src="${character.image}" alt="${character.name}">
     <p>Status: ${character.status}</p>
@@ -17,12 +17,13 @@ function exibirInformacoesPersonagem(character) {
   characterInfoElement.innerHTML = html;
 }
 
+
+
 // Exemplo: Obter informações do personagem com ID 
-obterInformacoesPersonagem(1)
+obterInformacoesPersonagem(60)
   .then(data => {
     exibirInformacoesPersonagem(data);
   })
   .catch(error => {
     console.error('Erro ao obter informações do personagem:', error.message);
   });
-
